@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../Component/Navbar';
 import About from './About';
+import Services from './Services';
 import Footer from '../Component/Footer';
 
 function Homepage(){
@@ -9,6 +10,7 @@ function Homepage(){
          <Navbar/>
          <br/><br/>
          <About/>
+         <Services/>
          {/* <Footer/> */}
       </div>
    )

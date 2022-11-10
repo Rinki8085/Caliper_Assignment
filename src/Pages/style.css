@@ -9,7 +9,17 @@
 .services{
    display:grid;
    grid-template-columns: repeat(2,1fr);
-   padding:20px;  
+   padding:20px 40px 20px 40px;  
+}
+
+@media screen and (max-width:768px){
+   .services{
+      grid-template-columns: auto;
+   }
+
+   .img{
+      display: none;
+   }
 }
 
 .services>div{
@@ -22,4 +32,36 @@
 
 .services>div:nth-child(2){
    text-align: center;
+}
+
+.box_service{
+   border:1px solid black;
+   padding:40px 0px 0px 0px;
+   background-color: #241f17;
+   color:white;
+}
+
+.box-1{
+   padding:40px 20px 20px 20px;
+}
+
+.box-2{
+   padding:60px 80px 20px 80px;
+   display:grid;
+   grid-template-columns: repeat(2,1fr);
+   gap:80px;
+}
+
+.buyers{
+   background-image: url('https://www.absolute.ag/images/grwAbs2.png');
+   background-repeat: no-repeat;
+   background-size:cover;
+   height:700px;
+}
+
+.growers{
+   background-image: url('https://www.absolute.ag/images/buyer2.png');
+   background-repeat: no-repeat;
+   background-size:cover;
+   height:700px;
 }
