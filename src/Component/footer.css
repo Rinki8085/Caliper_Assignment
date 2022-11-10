@@ -1,0 +1,19 @@
+.footer{
+   background-color:#3B3B3B;
+   padding:40px;
+}
+
+.footer_div{
+   padding:40px 10px 10px 10px;
+   color:grey;
+   display:grid;
+   grid-template-columns: repeat(2,1fr);
+   gap:30px;
+}
+
+.social_media{
+   display:flex;
+   flex-direction:row;
+   gap:30px;
+   padding-left:40px;
+}

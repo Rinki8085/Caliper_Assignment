@@ -41,11 +41,11 @@
    color:white;
 }
 
-.box-1{
+.box_1{
    padding:40px 20px 20px 20px;
 }
 
-.box-2{
+.box_2{
    padding:60px 80px 20px 80px;
    display:grid;
    grid-template-columns: repeat(2,1fr);
@@ -64,4 +64,42 @@
    background-repeat: no-repeat;
    background-size:cover;
    height:700px;
+}
+
+.serve{
+   position:relative;
+   top:450px;
+   left:30px;
+}
+
+.serve>p{
+   color:white;
+   font-weight:bold;
+}
+
+.serve>h3{
+   color:white;
+   font-weight:bold;
+   font-size:40px;
+   line-height:0.01rem;
+}
+
+.serve>button{
+   width:230px;
+   height:45px;
+   background-color:black;
+   color:white;
+   padding:7px;
+   font-size:20px;
+}
+
+.serve>button>a{
+   text-decoration:none;
+   color:white;
+}
+
+@media screen and (max-width:768px){
+   .box_2{
+      grid-template-columns: auto;
+   }
 }

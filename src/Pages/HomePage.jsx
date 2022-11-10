@@ -11,7 +11,7 @@ function Homepage(){
          <br/><br/>
          <About/>
          <Services/>
-         {/* <Footer/> */}
+         <Footer/>
       </div>
    )
 }
