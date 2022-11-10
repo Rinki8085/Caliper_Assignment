@@ -1,0 +1,25 @@
+.heading{
+   padding:10px;
+   text-align:center;
+   font-size:27px;
+   line-height:0.85rem;
+   padding-top:50px;
+}
+
+.services{
+   display:grid;
+   grid-template-columns: repeat(2,1fr);
+   padding:20px;  
+}
+
+.services>div{
+   padding:10px;
+}
+
+.services>div:nth-child(1){
+   line-height:0.85rem;
+}
+
+.services>div:nth-child(2){
+   text-align: center;
+}
