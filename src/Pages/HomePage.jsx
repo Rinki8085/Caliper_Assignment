@@ -7,11 +7,9 @@ import Footer from '../Component/Footer';
 function Homepage(){
    return(
       <div>
-         <Navbar/>
          <br/><br/>
          <About/>
          <Services/>
-         <Footer/>
       </div>
    )
 }

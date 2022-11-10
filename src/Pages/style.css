@@ -103,3 +103,70 @@
       grid-template-columns: auto;
    }
 }
+
+.grower_form{
+   border-radius:10px;
+   width:500px;
+   margin:auto;
+   padding:20px;
+   margin-top:40px;
+   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+   margin-bottom:40px;
+}
+
+.grower_form>form>div{
+   display:flex;
+   flex-direction: row;
+   justify-content: space-between;
+   margin-bottom:10px;
+   font-size:20px;
+   font-weight:bold;
+}
+
+input[type='text'],input[type='number']{
+   width:300px;
+   height:40px;
+   border:none;
+   border-bottom:1px solid grey;
+   outline:none;
+}
+
+.bttn{
+   margin-top:10px;
+   padding:10px;
+   background-color: #241f17;
+   border-radius:5px;
+   width:180px;
+   color:white;
+   cursor:pointer;
+   font-weight:bold;
+}
+
+.product_card{
+   padding:30px;
+   margin:10px 20px 0px 20px;
+   display:grid;
+   grid-template-columns:repeat(4,1fr);
+   gap:40px;
+}
+
+.product_card>div{
+   line-height:0.9rem;
+   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+   padding:20px;
+}
+
+.product_card>div>img{
+   width:320px;
+}
+
+.cart{
+   background-color:green;
+   border:none;
+   width:200px;
+   height:35px;
+   padding:7px;
+   color:white;
+   font-weight:bold;
+   cursor:pointer;
+}
