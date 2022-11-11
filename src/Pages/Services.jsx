@@ -6,6 +6,7 @@ function Services(){
       <div className='box_service'>
          <div className='box_1'>
             <div className='box_2'>
+               {/* Selling produce directly to customers(B2C) from its website. */}
                <div className='buyers'>
                   <div className='serve'>
                      <p>Exponentially increasing profitability</p>
