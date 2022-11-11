@@ -164,7 +164,7 @@ input[type='text'],input[type='number']{
    background-color:green;
    border:none;
    width:200px;
-   height:35px;
+   height:40px;
    padding:7px;
    color:white;
    font-weight:bold;
@@ -240,4 +240,72 @@ input[type='text'],input[type='number']{
 
 .farming_example>img{
    width:100%;
+}
+
+.product_details{
+   width:80%;
+   height:600px;
+   margin:auto;
+   margin-top:60px;
+   margin-bottom:60px;
+   display:grid;
+   grid-template-columns: repeat(2,1fr);
+}
+
+/* .product_details>div{
+   border:1px solid red;
+} */
+
+.product_details>div>img{
+   width:100%;
+   height:600px;
+}
+
+.content{
+   padding-left:40px;
+}
+
+.content>h3{
+   font-size:25px;
+}
+
+.qtyPri{
+   width:25%;
+}
+
+.qtyPri>p{
+   display:flex;
+   flex-direction:row;
+   justify-content:space-between;
+   font-size:16px;
+}
+
+.qtyPri>p>span:nth-child(1){
+   font-weight:bold;
+   font-size:17px;
+}
+
+.qty>select{
+   width:150px;
+   height:40px;
+   font-size:18px;
+}
+
+.cart_page{
+   width:80%;
+   margin:auto;
+   margin-top:50px;
+   padding:3px;
+   padding-left:15px;
+   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.product_list{
+   width:100%;
+   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.product_list>tr:nth-child(1){
+   background-color: green;
+   height:35px;
 }
