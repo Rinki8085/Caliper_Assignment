@@ -1,10 +1,23 @@
-import React from 'react';
+import React,{useState} from 'react';
 import './style.css';
 
 function CartPage(){
+   const [qty, setQty] = useState(1);
    let data = JSON.parse(localStorage.getItem('cart_product'));
 
    console.log(data);
+
+   const handleIncrease = () =>{
+      setQty(prev=>prev+1)
+   }
+
+   const handleDecrease = () =>{
+     if(qty>1){
+      setQty(prev=>prev-1);
+     }else{
+      alert('Quantity can not goes 0');
+     }
+   }
 
    return(
       <div>
@@ -21,27 +34,30 @@ function CartPage(){
                   <tr>
                      <th>Image</th>
                      <th>Product</th>
-                     <th>Price</th>
-                     <th>Qunatity</th>
                      <th>Amount</th>
-                     <th></th>
+                     <th>Quantity</th>
                   </tr>
-                  <tr>
-                     <td><img src='' width='50px' height='50px'  alt='plants' /></td>
-                     <td>Product Name</td>
-                     <td>30000</td>
-                     <td>
-                        <div>
-                           <div><button>-</button><button>+</button></div>
-                           <div></div>
-                        </div>
-                     </td>
-                     <td></td>
-                  </tr>
+                  {data.map((item)=>
+                  <tr key={item.price}>
+                  <td><div style={{display:'flex',justifyContent:'center'}}>
+                  <img src='https://store.brioagri.in/globalfile/images/f1aOH8ygcUm0qgqbtcYF0Q-200.jpg' width='70px' height='50px'  alt='plants' /></div></td>
+                  <td style={{width:'500px'}}>{item.prd_name}</td>
+                  <td>{`${item.price}` * `${qty}`}</td>
+                  <td>
+                     <div className='changeQty'>
+                        <div>{qty}</div>
+                        <div><button onClick={()=>handleDecrease(item)}>-</button><button onClick={()=>handleIncrease(item)}>+</button></div>   
+                     </div>
+                  </td>
+               </tr>
+                  )}
                   </table>
                </div>
             </div>
          </div>
+         <br/>
+         <br/>
+         <br/>
       </div>
    )
 }
